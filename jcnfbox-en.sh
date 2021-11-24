@@ -284,7 +284,7 @@ function start_menu(){
     red " jcnf BOX" 
     green " https://github.com/Netflixxp/jcnf-box "
     green " blog https://ybfl.xyz "
-	green " TG https://t.me/mffjc "
+    green " TG https://t.me/mffjc "
 	
 	yellow " =======Server check============================== "
     green " 1. Lemonbench Comprehensive test "
@@ -294,7 +294,7 @@ function start_menu(){
     green " 5. Speedtest test "
     green " 6. Get local IP "
     green " 7. Streaming media unlock test "
-	green " 8. Detection/diagnosis of Youtube area "
+    green " 8. Detection/diagnosis of Youtube area "
 	
     yellow " =======Server function============================== "
     green " 11. Linux change source script "
@@ -303,9 +303,9 @@ function start_menu(){
     green " 14. One-click installation of BBR "
     green " 15. System network configuration optimization "
     green " 16. BaoTa "
-	green " 17. aapanel "
-	green " 18. BaoTa Cracked version "
-	green " 19. Cloudflare WARP "
+    green " 17. aapanel "
+    green " 18. BaoTa Cracked version "
+    green " 19. Cloudflare WARP "
 
     yellow " =======Proxy tool============================ "
     green " 21. iptables "
@@ -313,8 +313,8 @@ function start_menu(){
     green " 23. MTP&TLS "
     green " 24. xray "
     green " 25. v2-ui "
-	green " 26. wulabing "
-	green " 27. Ehcoo "
+    green " 26. wulabing "
+    green " 27. Ehcoo "
 	
     yellow " =============================================== "
     green " 0. Exit script"
