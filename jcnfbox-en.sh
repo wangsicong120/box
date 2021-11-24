@@ -31,7 +31,7 @@ function memorytest(){
 yum install wget -y
 yum groupinstall "Development Tools" -y
 wget https://raw.githubusercontent.com/FunctionClub/Memtester/master/memtester.cpp
-blue "下载完成"
+blue "Download completed"
 gcc -l stdc++ memtester.cpp
 ./a.out
 }
@@ -41,7 +41,7 @@ function rtsh(){
 wget -O "/root/jcnf.sh" "https://raw.githubusercontent.com/Netflixxp/jcnfbesttrace/main/jcnf.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/jcnf.sh"
 chmod 777 "/root/jcnf.sh"
-yellow "下载完成,之后可执行 bash /root/jcnf.sh 再次运行"
+yellow "After the download is complete, execute bash /root/jcnf.sh to run again"
 bash "/root/jcnf.sh"
 }
 
@@ -50,7 +50,7 @@ function speedtest-linux(){
 wget -O "/root/speedtest" "https://raw.githubusercontent.com/Netflixxp/jcnf-box/master/sh/speedtest" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/speedtest"
 chmod 777 "/root/speedtest"
-yellow "下载完成,之后可执行 bash /root/speedtest 再次运行"
+yellow "After the download is complete, execute bash /root/speedtest to run again"
 ./speedtest
 }
 
@@ -87,7 +87,7 @@ function tubecheck(){
 wget -O "/root/tubecheck" "https://cdn.jsdelivr.net/gh/sjlleo/TubeCheck/CDN/tubecheck_1.0beta_linux_amd64" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/tubecheck"
 chmod 777 "/root/tubecheck"
-yellow "下载完成,之后可执行 ./tubecheck 再次运行"
+yellow "After the download is complete, you can execute ./tubecheck to run again"
 ./tubecheck
 }
 
@@ -97,17 +97,17 @@ function cssh(){
 wget -O "/root/changesource.sh" "https://raw.githubusercontent.com/Netflixxp/jcnf-box/master/sh/changesource.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/changesource.sh"
 chmod 777 "/root/changesource.sh"
-yellow "下载完成"
+yellow "Download completed"
 echo
-green "请自行输入下面命令切换对应源"
+green "Please enter the following command to switch the corresponding source"
 green " =================================================="
 echo
-green " bash changesource.sh 切换推荐源 "
-green " bash changesource.sh cn  切换中科大源 "
-green " bash changesource.sh aliyun 切换阿里源 "
-green " bash changesource.sh 163 切换网易源 "
-green " bash changesource.sh aws 切换AWS亚马逊云源 "
-green " bash changesource.sh restore 还原默认源 "
+green " bash changesource.sh Switch recommended source "
+green " bash changesource.sh cn  Switch to the University of Science and Technology of China "
+green " bash changesource.sh aliyun Switch Alibaba source "
+green " bash changesource.sh 163 Switch NetEase source "
+green " bash changesource.sh aws Switch AWS Amazon Cloud Source "
+green " bash changesource.sh restore Restore default source "
 }
 
 #IPV.SH ipv4/6优先级调整
@@ -115,7 +115,7 @@ function ipvsh(){
 wget -O "/root/ipv4.sh" "https://raw.githubusercontent.com/Netflixxp/jcnf-box/master/sh/ipv4.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/ipv4.sh"
 chmod 777 "/root/ipv4.sh"
-yellow "下载完成,之后可执行 bash /root/ipv4.sh 再次运行"
+yellow "After the download is complete, execute bash /root/ipv4.sh to run again"
 bash "/root/ipv4.sh"
 }
 
@@ -124,7 +124,7 @@ function swapsh(){
 wget -O "/root/swap.sh" "https://raw.githubusercontent.com/Netflixxp/jcnf-box/master/sh/swap.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/swap.sh"
 chmod 777 "/root/swap.sh"
-yellow "下载完成,你也可以输入 bash /root/swap.sh Run manually"
+yellow "After the download is complete, you can also enter bash /root/swap.sh Run manually"
 bash "/root/swap.sh"
 }
 
@@ -133,7 +133,7 @@ function bbr(){
 wget -O "/root/tcp.sh" "https://github.000060000.xyz/tcp.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/tcp.sh"
 chmod 777 "/root/tcp.sh"
-yellow "下载完成,你也可以输入 bash /root/tcp.sh Run manually"
+yellow "After the download is complete, you can also enter bash /root/tcp.sh Run manually"
 bash "/root/tcp.sh"
 }
 
@@ -182,10 +182,10 @@ sysctl -p
 	echo "*               soft    nofile           1000000
 *               hard    nofile          1000000">/etc/security/limits.conf
 	echo "ulimit -SHn 1000000">>/etc/profile
-	read -p "需要重启VPS后，才能生效系统优化配置，是否现在重启 ? [Y/n] :" yn
+	read -p "The VPS needs to be restarted for the system optimization configuration to take effect. Do you want to restart now? [Y/n] :" yn
 	[ -z "${yn}" ] && yn="y"
 	if [[ $yn == [Yy] ]]; then
-		echo -e "${Info} VPS 重启中..."
+		echo -e "${Info} VPS restarting..."
 		reboot
 	fi
 }
@@ -195,7 +195,7 @@ function btnew(){
 wget -O "/root/install.sh" "http://download.bt.cn/install/install_6.0.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/install.sh"
 chmod 777 "/root/install.sh"
-blue "下载完成"
+blue "Download completed"
 bash "/root/install.sh"
 }
 
@@ -204,7 +204,7 @@ function aaPanel(){
 wget -O "/root/aaPanel.sh" "http://www.aapanel.com/script/install_6.0_en.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/aaPanel.sh"
 chmod 777 "/root/aaPanel.sh"
-blue "下载完成"
+blue "Download completed"
 bash "/root/aaPanel.sh"
 }
 
@@ -213,7 +213,7 @@ function btpj(){
 wget -O "/root/btpj.sh" "http://v7.hostcli.com/install/install_6.0.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/btpj.sh"
 chmod 777 "/root/btpj.sh"
-blue "下载完成"
+blue "Download completed"
 bash "/root/btpj.sh"
 }
 
@@ -398,7 +398,7 @@ function start_menu(){
         ;;
         * )
             clear
-            red "请输入正确数字 !"
+            red "Please enter the correct number!"
             start_menu
         ;;
     esac
