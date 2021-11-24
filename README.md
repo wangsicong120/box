@@ -11,7 +11,7 @@
 
 	wget -O jcnfbox.sh https://raw.githubusercontent.com/Netflixxp/jcnf-box/main/jcnfbox.sh && chmod +x jcnfbox.sh && clear && ./jcnfbox.sh
 	
-English translation thanks @Jeffeditae
+English translation thanks [@Jeffeditae](https://t.me/Jeffeditae)
 
 
 	wget -O jcnfbox-en.sh https://raw.githubusercontent.com/Netflixxp/jcnf-box/main/jcnfbox-en.sh && chmod +x jcnfbox-en.sh && clear && ./jcnfbox-en.sh
