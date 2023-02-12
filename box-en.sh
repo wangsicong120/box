@@ -1,3 +1,5 @@
+#! /bin/bash
+# By jcnf
 
 #颜色
 red(){
@@ -29,7 +31,7 @@ function memorytest(){
 yum install wget -y
 yum groupinstall "Development Tools" -y
 wget https://raw.githubusercontent.com/FunctionClub/Memtester/master/memtester.cpp
-blue "Download completed"
+blue "下载完成"
 gcc -l stdc++ memtester.cpp
 ./a.out
 }
@@ -39,7 +41,7 @@ function rtsh(){
 wget -O "/root/jcnf.sh" "https://raw.githubusercontent.com/Netflixxp/jcnfbesttrace/main/jcnf.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/jcnf.sh"
 chmod 777 "/root/jcnf.sh"
-yellow "After the download is complete, execute bash /root/jcnf.sh to run again"
+yellow "下载完成,之后可执行 bash /root/jcnf.sh 再次运行"
 bash "/root/jcnf.sh"
 }
 
@@ -48,7 +50,7 @@ function speedtest-linux(){
 wget -O "/root/speedtest" "https://raw.githubusercontent.com/Netflixxp/jcnf-box/master/sh/speedtest" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/speedtest"
 chmod 777 "/root/speedtest"
-yellow "After the download is complete, execute bash /root/speedtest to run again"
+yellow "下载完成,之后可执行 bash /root/speedtest 再次运行"
 ./speedtest
 }
 
@@ -85,7 +87,7 @@ function tubecheck(){
 wget -O "/root/tubecheck" "https://cdn.jsdelivr.net/gh/sjlleo/TubeCheck/CDN/tubecheck_1.0beta_linux_amd64" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/tubecheck"
 chmod 777 "/root/tubecheck"
-yellow "After the download is complete, you can execute ./tubecheck to run again"
+yellow "下载完成,之后可执行 ./tubecheck 再次运行"
 ./tubecheck
 }
 
@@ -95,17 +97,17 @@ function cssh(){
 wget -O "/root/changesource.sh" "https://raw.githubusercontent.com/Netflixxp/jcnf-box/master/sh/changesource.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/changesource.sh"
 chmod 777 "/root/changesource.sh"
-yellow "Download completed"
+yellow "下载完成"
 echo
-green "Please enter the following command to switch the corresponding source"
+green "请自行输入下面命令切换对应源"
 green " =================================================="
 echo
-green " bash changesource.sh Switch recommended source "
-green " bash changesource.sh cn  Switch to the University of Science and Technology of China "
-green " bash changesource.sh aliyun Switch Alibaba source "
-green " bash changesource.sh 163 Switch NetEase source "
-green " bash changesource.sh aws Switch AWS Amazon Cloud Source "
-green " bash changesource.sh restore Restore default source "
+green " bash changesource.sh 切换推荐源 "
+green " bash changesource.sh cn  切换中科大源 "
+green " bash changesource.sh aliyun 切换阿里源 "
+green " bash changesource.sh 163 切换网易源 "
+green " bash changesource.sh aws 切换AWS亚马逊云源 "
+green " bash changesource.sh restore 还原默认源 "
 }
 
 #IPV.SH ipv4/6优先级调整
@@ -113,7 +115,7 @@ function ipvsh(){
 wget -O "/root/ipv4.sh" "https://raw.githubusercontent.com/Netflixxp/jcnf-box/master/sh/ipv4.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/ipv4.sh"
 chmod 777 "/root/ipv4.sh"
-yellow "After the download is complete, execute bash /root/ipv4.sh to run again"
+yellow "下载完成,之后可执行 bash /root/ipv4.sh 再次运行"
 bash "/root/ipv4.sh"
 }
 
@@ -122,7 +124,7 @@ function swapsh(){
 wget -O "/root/swap.sh" "https://raw.githubusercontent.com/Netflixxp/jcnf-box/master/sh/swap.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/swap.sh"
 chmod 777 "/root/swap.sh"
-yellow "After the download is complete, you can also enter bash /root/swap.sh Run manually"
+yellow "下载完成,你也可以输入 bash /root/swap.sh Run manually"
 bash "/root/swap.sh"
 }
 
@@ -131,7 +133,7 @@ function bbr(){
 wget -O "/root/tcp.sh" "https://github.000060000.xyz/tcp.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/tcp.sh"
 chmod 777 "/root/tcp.sh"
-yellow "After the download is complete, you can also enter bash /root/tcp.sh Run manually"
+yellow "下载完成,你也可以输入 bash /root/tcp.sh Run manually"
 bash "/root/tcp.sh"
 }
 
@@ -180,10 +182,10 @@ sysctl -p
 	echo "*               soft    nofile           1000000
 *               hard    nofile          1000000">/etc/security/limits.conf
 	echo "ulimit -SHn 1000000">>/etc/profile
-	read -p "The VPS needs to be restarted for the system optimization configuration to take effect. Do you want to restart now? [Y/n] :" yn
+	read -p "需要重启VPS后，才能生效系统优化配置，是否现在重启 ? [Y/n] :" yn
 	[ -z "${yn}" ] && yn="y"
 	if [[ $yn == [Yy] ]]; then
-		echo -e "${Info} VPS restarting..."
+		echo -e "${Info} VPS 重启中..."
 		reboot
 	fi
 }
@@ -193,7 +195,7 @@ function btnew(){
 wget -O "/root/install.sh" "http://download.bt.cn/install/install_6.0.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/install.sh"
 chmod 777 "/root/install.sh"
-blue "Download completed"
+blue "下载完成"
 bash "/root/install.sh"
 }
 
@@ -202,16 +204,16 @@ function aaPanel(){
 wget -O "/root/aaPanel.sh" "http://www.aapanel.com/script/install_6.0_en.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/aaPanel.sh"
 chmod 777 "/root/aaPanel.sh"
-blue "Download completed"
+blue "下载完成"
 bash "/root/aaPanel.sh"
 }
 
 #宝塔面板破解版·一键安装
 function btpj(){
-wget -O "/root/btpj.sh" "http://v7.hostcli.com/install/install_6.0.sh" --no-check-certificate -T 30 -t 5 -d
+wget -O "/root/btpj.sh" "https://raw.githubusercontent.com/zhucaidan/btpanel-v7.7.0/main/install/install_panel.sh" --no-check-certificate -T 30 -t 5 -d
 chmod +x "/root/btpj.sh"
 chmod 777 "/root/btpj.sh"
-blue "Download completed"
+blue "下载完成"
 bash "/root/btpj.sh"
 }
 
@@ -282,7 +284,7 @@ function start_menu(){
     red " jcnf BOX" 
     green " https://github.com/Netflixxp/jcnf-box "
     green " blog https://ybfl.xyz "
-    green " TG https://t.me/mffjc "
+	green " TG https://t.me/mffjc "
 	
 	yellow " =======Server check============================== "
     green " 1. Lemonbench Comprehensive test "
@@ -292,7 +294,7 @@ function start_menu(){
     green " 5. Speedtest test "
     green " 6. Get local IP "
     green " 7. Streaming media unlock test "
-    green " 8. Detection/diagnosis of Youtube area "
+	green " 8. Detection/diagnosis of Youtube area "
 	
     yellow " =======Server function============================== "
     green " 11. Linux change source script "
@@ -301,9 +303,9 @@ function start_menu(){
     green " 14. One-click installation of BBR "
     green " 15. System network configuration optimization "
     green " 16. BaoTa "
-    green " 17. aapanel "
-    green " 18. BaoTa Cracked version "
-    green " 19. Cloudflare WARP "
+	green " 17. aapanel "
+	green " 18. BaoTa Cracked version "
+	green " 19. Cloudflare WARP "
 
     yellow " =======Proxy tool============================ "
     green " 21. iptables "
@@ -311,8 +313,8 @@ function start_menu(){
     green " 23. MTP&TLS "
     green " 24. xray "
     green " 25. v2-ui "
-    green " 26. wulabing "
-    green " 27. Ehcoo "
+	green " 26. wulabing "
+	green " 27. Ehcoo "
 	
     yellow " =============================================== "
     green " 0. Exit script"
@@ -396,7 +398,7 @@ function start_menu(){
         ;;
         * )
             clear
-            red "Please enter the correct number!"
+            red "请输入正确数字 !"
             start_menu
         ;;
     esac
