@@ -1,4 +1,4 @@
-# jcnf 常用脚本工具包
+常用脚本工具包
 玩机，是不是有很多命令或者脚本记不住，因此我整理了一些我个人常用的脚本。
 ***
 
@@ -9,12 +9,12 @@
 
 安装并运行脚本
 
-	wget -O jcnfbox.sh https://raw.githubusercontent.com/Netflixxp/jcnf-box/main/jcnfbox.sh && chmod +x jcnfbox.sh && clear && ./jcnfbox.sh
+	wget -O box.sh https://raw.githubusercontent.com/wangsicong120/box/main/box.sh && chmod +x box.sh && clear && ./box.sh
 	
 English translation thanks [@Jeffeditae](https://t.me/Jeffeditae)
 
 
-	wget -O jcnfbox-en.sh https://raw.githubusercontent.com/Netflixxp/jcnf-box/main/jcnfbox-en.sh && chmod +x jcnfbox-en.sh && clear && ./jcnfbox-en.sh
+	wget -O box-en.sh https://raw.githubusercontent.com/wangsicong120/box/main/box-en.sh && chmod +x box-en.sh && clear && ./box-en.sh
 ***
 
 
@@ -50,25 +50,3 @@ English translation thanks [@Jeffeditae](https://t.me/Jeffeditae)
 ![功能列表](https://cdn.jsdelivr.net/gh/Netflixxp/jcnf-box/img/sm.jpg)
 ***
 
-# 免责声明
-* jcnfbox属于自用分享工具，请勿用于违背良知与道德之事，否则后果自负。
-* 工具中所有脚本均来自互联网，不对脚本安全性负责。如果你比较在意安全，请勿使用各类一键脚本。
-***
-
-# 问题反馈
-[TG频道](https://t.me/mffjc)
-[TG群组](https://t.me/jcnfnatuo)
-***
-
-# [购买奈飞、YouTube正规合租车](https://jcnf.xyz/nf)
-***
-
-# [群友众筹公益机场](https://jcnf.xyz/jd)
-***
-
-# 感谢
- * [BlueSkyXN](https://github.com/BlueSkyXN/SKY-BOX)
- * [arloor](https://github.com/arloor/iptablesUtils)
- * [KANIKIG](https://github.com/KANIKIG/Multi-EasyGost)
- * [wulabing](https://github.com/wulabing/Xray_onekey)
- * [mack-a](https://github.com/mack-a/v2ray-agent)
