@@ -1,5 +1,3 @@
-#! /bin/bash
-# By jcnf
 
 #颜色
 red(){
